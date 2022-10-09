@@ -1,0 +1,86 @@
+.box {
+	position: absolute;
+	top: 12px;
+    left: 10px;
+	margin-right: 15px;
+	width: 150px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: rgb(207,232,220);
+	padding: 1em;
+}
+
+li, a, button{
+	font-family:"Montserrat", sans-serif;
+	font-weight:500;
+	font-size:16px;
+	color:#edf0f1;
+	text-decoration:none;
+}
+
+header{
+	display:flex; /* https://www.w3schools.com/cssref/pr_class_display.asp */
+	justify-content:flex-end;
+	align-items:center;
+	background-color:#954535;
+	padding:30px 10%;
+}
+
+.nav__links{
+	list-style:none;
+}
+
+.nav__links li{
+	display:inline-block; /* Now, this element behaves like an inline block */
+	padding:0px 20px;
+}
+
+.nav__links li a{
+	transition:all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+	color:#0088;
+}
+
+.banner_name{
+	height:100%;
+}
+.banner_name img{
+	width:100%;
+	height:90vh;
+}
+	
+.our_h3{
+	font-weight:bold;
+	font-size:32px;
+}
+	
+.content_name{
+	padding:0.5%; /* This is the reason why the .our_h3 and .content_name is quite far from one another */
+}
+	
+.content_name p{
+	font-size:18px;
+	line-height:1.8;
+	font-family:Times;
+}
+	
+footer{
+	background:#000;
+	color:#fff;
+	padding:15px 50px;
+}
+
+button{
+	padding:9px 25px;
+	background-color:rgba(0,136,169,1);
+	border:none;
+	border-radius:50px;
+	cursor:pointer;
+	transition:all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color:rgba(0,136,169,0.8);
+}
