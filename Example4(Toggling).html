@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Let's Get Toggling </title>
+		<style>
+			.paragraph { padding: 15px; width: 400px; }
+			.bg-mocassin { background: moccasin; }
+			.bg-cornsilk { background: cornsilk; }
+		</style>
+	</head>
+
+	
+	<body>
+		<section>
+			<p id="myparagraph" class="paragraph bg-mocassin">
+				The Palace Museum is a national museum housed in 
+				the Forbidden City at the core of Beijing, China. 
+				It was established in 1925 after the last Emperor 
+				of China was evicted from his palace, and opened 
+				its doors to the public.
+			</p>
+		</section> <!-- Section works just like -->
+	
+		<br>
+		<button onclick="toggle_name();">Toggle class</button>
+	
+		<script>
+			let toggle_name = () => {
+				let element = document.getElementById("myparagraph");
+				element.classList.toggle("bg-cornsilk");
+			}
+		</script>
+	</body>
+</html>
