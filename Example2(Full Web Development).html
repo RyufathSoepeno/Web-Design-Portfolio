@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Your own website </title>
+	
+	<style>
+		.Text{
+			font-family:"Montserrat", sans-serif;
+			font-weight:bold;
+			font-size:16px;
+			color:#660066;
+			text-decoration:none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h2 class="Text"> Welcome! </h2>
+	<p>Click the button to demonstrate the prompt box.</p>
+
+	<button onclick="myFunction()">Click Me</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			let person = prompt("Please enter your name", "Harry Potter");
+			if (person != null) {
+				document.getElementById("demo").innerHTML =
+				"Hello " + person + "! How are you today?";
+			}
+		}
+	</script>
+
+</body>
+</html>
